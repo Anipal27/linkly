@@ -62,7 +62,7 @@ public class UserServiceImp implements UserService {
             genericResponseDto.setSuccess(false);
             return genericResponseDto;
         }
-        genericResponseDto.setMessage("user removed succesfully");
+        genericResponseDto.setMessage("user removed successfully");
         genericResponseDto.setSuccess(true);
         userRepository.deleteById(id);
 
