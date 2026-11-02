@@ -1,6 +1,6 @@
-package com.MyOrg.Linkly.repository;
+package com.myorg.linkly.repository;
 
-import com.MyOrg.Linkly.entity.User;
+import com.myorg.linkly.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

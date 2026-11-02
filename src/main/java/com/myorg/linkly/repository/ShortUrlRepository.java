@@ -1,6 +1,6 @@
-package com.MyOrg.Linkly.repository;
+package com.myorg.linkly.repository;
 
-import com.MyOrg.Linkly.entity.ShortUrl;
+import com.myorg.linkly.entity.ShortUrl;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

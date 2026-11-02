@@ -1,10 +1,11 @@
-package com.MyOrg.Linkly.service;
+package com.myorg.linkly.service;
 
-import com.MyOrg.Linkly.dto.reponse.GenericResponseDto;
-import com.MyOrg.Linkly.dto.reponse.UserResponseDto;
-import com.MyOrg.Linkly.dto.request.UserRequestDto;
-import com.MyOrg.Linkly.entity.User;
-import com.MyOrg.Linkly.repository.UserRepository;
+
+import com.myorg.linkly.dto.reponse.GenericResponseDto;
+import com.myorg.linkly.dto.reponse.UserResponseDto;
+import com.myorg.linkly.dto.request.UserRequestDto;
+import com.myorg.linkly.entity.User;
+import com.myorg.linkly.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

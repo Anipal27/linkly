@@ -1,8 +1,8 @@
-package com.MyOrg.Linkly.controller;
+package com.myorg.linkly.controller;
 
-import com.MyOrg.Linkly.dto.reponse.GenericResponseDto;
-import com.MyOrg.Linkly.dto.request.ShortUrlRequestDto;
-import com.MyOrg.Linkly.service.ShortUrlService;
+import com.myorg.linkly.dto.reponse.GenericResponseDto;
+import com.myorg.linkly.dto.request.ShortUrlRequestDto;
+import com.myorg.linkly.service.ShortUrlService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

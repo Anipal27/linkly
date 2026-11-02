@@ -1,21 +1,18 @@
-package com.MyOrg.Linkly.entity;
+package com.myorg.linkly.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "accounts")
+@Table(name = "tags")
 @Getter
 @Setter
-public class Account {
+public class Tag {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Double balance = 0D;
-
-    @OneToOne
-    private User user;
+    private String tag;
 
 }

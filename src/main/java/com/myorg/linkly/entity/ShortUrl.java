@@ -1,4 +1,4 @@
-package com.MyOrg.Linkly.entity;
+package com.myorg.linkly.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

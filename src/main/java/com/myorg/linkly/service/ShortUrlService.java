@@ -1,7 +1,7 @@
-package com.MyOrg.Linkly.service;
+package com.myorg.linkly.service;
 
-import com.MyOrg.Linkly.dto.reponse.GenericResponseDto;
-import com.MyOrg.Linkly.dto.request.ShortUrlRequestDto;
+import com.myorg.linkly.dto.reponse.GenericResponseDto;
+import com.myorg.linkly.dto.request.ShortUrlRequestDto;
 import org.springframework.stereotype.Service;
 
 @Service

@@ -1,7 +1,7 @@
-package com.MyOrg.Linkly.repository;
+package com.myorg.linkly.repository;
 
 
-import com.MyOrg.Linkly.entity.Tag;
+import com.myorg.linkly.entity.Tag;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface TagRepository extends JpaRepository<Tag, Long> {

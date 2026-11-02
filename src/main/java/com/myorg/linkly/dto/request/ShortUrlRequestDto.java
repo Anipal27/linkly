@@ -1,4 +1,4 @@
-package com.MyOrg.Linkly.dto.request;
+package com.myorg.linkly.dto.request;
 
 import lombok.Data;
 

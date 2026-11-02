@@ -1,13 +1,13 @@
-package com.MyOrg.Linkly.service;
+package com.myorg.linkly.service;
 
-import com.MyOrg.Linkly.dto.reponse.GenericResponseDto;
-import com.MyOrg.Linkly.dto.request.ShortUrlRequestDto;
-import com.MyOrg.Linkly.entity.ShortUrl;
-import com.MyOrg.Linkly.entity.Tag;
-import com.MyOrg.Linkly.entity.User;
-import com.MyOrg.Linkly.repository.ShortUrlRepository;
-import com.MyOrg.Linkly.repository.TagRepository;
-import com.MyOrg.Linkly.repository.UserRepository;
+import com.myorg.linkly.dto.reponse.GenericResponseDto;
+import com.myorg.linkly.dto.request.ShortUrlRequestDto;
+import com.myorg.linkly.entity.ShortUrl;
+import com.myorg.linkly.entity.Tag;
+import com.myorg.linkly.entity.User;
+import com.myorg.linkly.repository.ShortUrlRepository;
+import com.myorg.linkly.repository.TagRepository;
+import com.myorg.linkly.repository.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

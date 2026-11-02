@@ -1,11 +1,11 @@
-package com.MyOrg.Linkly.dto.reponse;
+package com.myorg.linkly.dto.request;
 
 import lombok.Data;
 
 @Data
-public class UserResponseDto {
-    private Long id;
+public class UserRequestDto {
     private String firstname;
     private String lastname;
     private String email;
+    private String password;
 }

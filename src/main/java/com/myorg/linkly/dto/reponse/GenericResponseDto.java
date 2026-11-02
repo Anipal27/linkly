@@ -1,4 +1,4 @@
-package com.MyOrg.Linkly.dto.reponse;
+package com.myorg.linkly.dto.reponse;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

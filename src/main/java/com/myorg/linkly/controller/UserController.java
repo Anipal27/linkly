@@ -1,9 +1,9 @@
-package com.MyOrg.Linkly.controller;
+package com.myorg.linkly.controller;
 
-import com.MyOrg.Linkly.dto.reponse.GenericResponseDto;
-import com.MyOrg.Linkly.dto.reponse.UserResponseDto;
-import com.MyOrg.Linkly.dto.request.UserRequestDto;
-import com.MyOrg.Linkly.service.UserService;
+import com.myorg.linkly.dto.reponse.GenericResponseDto;
+import com.myorg.linkly.dto.reponse.UserResponseDto;
+import com.myorg.linkly.dto.request.UserRequestDto;
+import com.myorg.linkly.service.UserService;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
