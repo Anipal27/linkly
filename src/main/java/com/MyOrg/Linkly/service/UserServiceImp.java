@@ -27,7 +27,8 @@ public class UserServiceImp implements UserService {
 
     @Override
     public List<UserResponseDto> getAllUser() {
-        List<User> userList = userRepository.findAll();
+//        List<User> userList = userRepository.findAll();
+        List<User> userList = userRepository.getAllUsers();
         List<UserResponseDto> userResponseDtoList = new ArrayList<>();
         for (User user : userList) {
             userResponseDtoList.add(mapUserToUserResponseDto(user));
@@ -69,7 +70,8 @@ public class UserServiceImp implements UserService {
 
     @Override
     public UserResponseDto getUserByEmail(String email) {
-        User user = userRepository.findByEmail(email).orElse(null);
+//        User user = userRepository.findByEmail(email).orElse(null);
+        User user = userRepository.searchByEmail(email).orElse(null);
         return (user != null)?mapUserToUserResponseDto(user):null;
     }
 

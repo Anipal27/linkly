@@ -3,7 +3,6 @@ package com.MyOrg.Linkly.service;
 import com.MyOrg.Linkly.dto.reponse.GenericResponseDto;
 import com.MyOrg.Linkly.dto.reponse.UserResponseDto;
 import com.MyOrg.Linkly.dto.request.UserRequestDto;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 

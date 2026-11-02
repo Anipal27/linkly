@@ -19,4 +19,7 @@ public class User {
     private String lastname;
     private String email;
     private String password;
+
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "user", fetch = FetchType.LAZY)
+    private Account account;
 }
