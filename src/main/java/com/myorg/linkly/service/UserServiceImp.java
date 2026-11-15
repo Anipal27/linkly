@@ -6,6 +6,10 @@ import com.myorg.linkly.dto.reponse.UserResponseDto;
 import com.myorg.linkly.dto.request.UserRequestDto;
 import com.myorg.linkly.entity.User;
 import com.myorg.linkly.repository.UserRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -20,7 +24,7 @@ public class UserServiceImp implements UserService {
     }
 
     @Override
-    public UserResponseDto userRegistration(UserRequestDto userRequestDto) {
+    public UserResponseDto registerUser(UserRequestDto userRequestDto) {
         User user = mapUserRequestDtoToUser(userRequestDto,new User());
         userRepository.save(user);
         return  mapUserToUserResponseDto(user);
@@ -96,6 +100,13 @@ public class UserServiceImp implements UserService {
         }
 
         return userResponseDtoList;
+    }
+
+    @Override
+    public Page<UserResponseDto> getUserPage(int pageIndex, int pageSize, String sortBy, String sortOrder) {
+        Sort sort = sortOrder.equalsIgnoreCase("ASC")? Sort.by(Sort.Direction.ASC, sortBy) : Sort.by(Sort.Direction.DESC, sortBy);
+        Pageable pageable = PageRequest.of(pageIndex, pageSize, sort);
+        return userRepository.findAll(pageable).map(this :: mapUserToUserResponseDto);
     }
 
 

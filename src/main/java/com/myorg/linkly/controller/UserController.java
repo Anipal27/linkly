@@ -4,6 +4,7 @@ import com.myorg.linkly.dto.reponse.GenericResponseDto;
 import com.myorg.linkly.dto.reponse.UserResponseDto;
 import com.myorg.linkly.dto.request.UserRequestDto;
 import com.myorg.linkly.service.UserService;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -22,7 +23,7 @@ public class UserController {
 
     @PostMapping("/createuser")
     public ResponseEntity<UserResponseDto> userRegistration(@RequestBody UserRequestDto userRequestDto){
-        return new ResponseEntity<>(userService.userRegistration(userRequestDto), HttpStatusCode.valueOf(201));
+        return new ResponseEntity<>(userService.registerUser(userRequestDto), HttpStatusCode.valueOf(201));
     }
     @GetMapping("/getusers")
     public ResponseEntity<List<UserResponseDto>> getAllUser(){
@@ -53,5 +54,9 @@ public class UserController {
     @GetMapping("/users/FirstnameAndLastname")
     public ResponseEntity<List<UserResponseDto>> getUserByFirstnameAndLastname(@RequestParam String firstname,String lastname){
         return new ResponseEntity<>(userService.getUserByFirstnameAndLastname(firstname, lastname), HttpStatusCode.valueOf(200));
+    }
+    @GetMapping("/page")
+    public ResponseEntity<Page<UserResponseDto>> getUsersPage(@RequestParam int pageIndex, @RequestParam int pageSize, @RequestParam String sortBy, @RequestParam String sortOrder){
+        return new ResponseEntity<>(userService.getUserPage(pageIndex,pageSize,sortBy,sortOrder), HttpStatusCode.valueOf(200));
     }
 }
